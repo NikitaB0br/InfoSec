@@ -1,67 +1,75 @@
-.caesar-cipher {
+.appWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom right, #eaeaea, #ffffff);
+  background: linear-gradient(to bottom right, rgb(234, 234, 234), rgb(255, 255, 255));
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
 
   h1 {
     font-size: 26px;
     margin-bottom: 20px;
-    color: #333;
+    color: rgb(51, 51, 51);
   }
 
-  .input-text {
+  .inputText {
     width: 100%;
     height: 120px;
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     transition: border 0.3s;
 
     &:focus {
-      border-color: #007BFF;
+      border-color: rgb(0, 123, 255);
       outline: none;
     }
   }
 
-  .input-key {
+  .inputKey {
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     width: 100px;
     transition: border 0.3s;
 
     &:focus {
-      border-color: #007BFF;
+      border-color: rgb(0, 123, 255);
       outline: none;
     }
   }
 
-  .button-group {
+  .buttons {
     margin-bottom: 20px;
 
     button {
       margin: 5px;
       padding: 10px 15px;
       font-size: 16px;
-      color: white;
-      background-color: #007BFF;
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 123, 255);
       border: none;
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: rgb(0, 86, 179);
       }
     }
   }
@@ -69,13 +77,13 @@
   h2 {
     font-size: 20px;
     margin: 10px 0;
-    color: #555;
+    color: rgb(85, 85, 85);
   }
 
-  .output-text {
-    background-color: #f4f4f4;
+  .outputText {
+    background-color: rgb(244, 244, 244);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     width: 100%;
     max-width: 600px;
     border-radius: 4px;
